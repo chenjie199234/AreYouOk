@@ -5,7 +5,7 @@ A SoftWare For Synchronize Status Based On Wxwidgets
 
 ![image](https://github.com/chenjie199234/AreYouOk/raw/master/screenshot/OKOK.png) ![image](https://github.com/chenjie199234/AreYouOk/raw/master/screenshot/NotOK.png)
 
-If There Is Any Problem Of The App.Please Contact With Me.But I Cant Replay You At First Time.
+If There Is Any Problem Of The App.Please Contact With Me.But I Cant Reply You At The First Time.
 
 I Have To Apologize For This.I Hope You Can Accept My Apologize.I Have To Work To Support My Life.
 
