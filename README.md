@@ -1,8 +1,11 @@
 
 # AreYouOk
 A SoftWare For Synchronize Status Based On Wxwidgets
+
 If You Want To Support The App,You Can Donate For It!
+
 PayPal:
+
 ![image](https://github.com/chenjie199234/AreYouOk/raw/master/donate/paypal.png)
 
 PayPal.Me/areyouok
