@@ -1,4 +1,5 @@
-# AreYouOk
+
+https://www.paypal.me/areyouok# AreYouOk
 A SoftWare For Synchronize Status Based On Wxwidgets
 
 这是一个状态同步软件基于wxwidgets编写
@@ -23,7 +24,7 @@ PayPal:
 
 ![image](https://github.com/chenjie199234/AreYouOk/raw/master/donate/paypal.png)
 
-PayPal.Me/areyouok
+https://www.paypal.me/areyouok
 
 微信（WeChat）:
 
