@@ -1,5 +1,5 @@
 
-https://www.paypal.me/areyouok# AreYouOk
+# AreYouOk
 A SoftWare For Synchronize Status Based On Wxwidgets
 
 这是一个状态同步软件基于wxwidgets编写
