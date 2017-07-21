@@ -8,7 +8,7 @@ A SoftWare For Synchronize Status Based On Wxwidgets
 
 If There Is Any Problem Of The App.Please Contact With Me.But I Cant Reply You At The First Time.
 
-I Have To Apologize For This.I Hope You Can Accept My Apologize.I Have To Work To Support My Life.
+I Have To Apologize For This.I Hope You Can Accept My Apologize.We Are In Different Time Zone,Maybe I'm Sleeping Or I'm Working.
 
 如果有任何问题，请第一时间联系我，但是我可能不能第一时间回复
 
