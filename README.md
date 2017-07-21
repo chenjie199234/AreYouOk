@@ -12,7 +12,7 @@ A Register Create And Share The Room-number To Others.Other People Use The Room-
 
 Then If You Are Ready,Click The Button In The Software,Or Press A Hot-key You Set.The Default Hot-key Is Space.
 
-Your Selection Will Be Uploaded To The Server And The Server Will Tell Other People In The Room That Your Staus Was Changed. 
+Your Selection Will Be Uploaded To The Server And The Server Will Tell Other People In The Room That Your Status Was Changed. 
 
 Now Everyone  Can Know How Many People Are Ready And How Many People Are Unready!
 
