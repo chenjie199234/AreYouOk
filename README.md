@@ -1,13 +1,13 @@
 # AreYouOk
 A SoftWare For Synchronize Status Based On Wxwidgets
 
+这是一个状态同步软件基于wxwidgets编写
+
 ![image](https://github.com/chenjie199234/AreYouOk/raw/master/screenshot/OKOK.png) ![image](https://github.com/chenjie199234/AreYouOk/raw/master/screenshot/NotOK.png)
 
 If There Is Any Problem Of The App.Please Contact With Me.But I Cant Replay You At First Time.
 
 I Have To Apologize For This.I Hope You Can Accept My Apologize.I Have To Work To Support My Life.
-
-这是一个状态同步软件基于wxwidgets编写
 
 如果有任何问题，请第一时间联系我，但是我可能不能第一时间回复
 
