@@ -2,6 +2,10 @@
 # AreYouOk
 A SoftWare For Synchronize Status Based On Wxwidgets
 
+If There Is Any Problem Of The App!Please Contact With Me!
+
+Email:517464047@qq.com
+
 If You Want To Support The App,You Can Donate For It!
 
 PayPal:
