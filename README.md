@@ -39,3 +39,11 @@ Email:517464047@qq.com
 If You Want To Support The App,You Can Donate For It!The Money Will Be Used To MainTain The Server!
 
 如果你想支持这个软件，你可以以以下方式捐款，钱将用于维护服务器！
+
+![image](https://github.com/chenjie199234/AreYouOk/raw/master/donate/paypal.png)
+
+https://www.paypal.me/areyouok
+
+微信（WeChat）：                                                                   支付宝（AliPay）：
+
+![image](https://github.com/chenjie199234/AreYouOk/raw/master/donate/微信.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![image](https://github.com/chenjie199234/AreYouOk/raw/master/donate/支付宝.png)
