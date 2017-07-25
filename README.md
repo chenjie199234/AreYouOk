@@ -61,7 +61,7 @@ I Have To Apologize For This.I Hope You Can Accept My Apologize.We Are In Differ
 
 If You Want To Support The App,You Can Donate For It!The Money Will Be Used To MainTain The Server!
 
-# 捐助
+# 捐助：
 
 如果你想支持这个软件，你可以以以下方式捐款，钱将用于维护服务器！
 
