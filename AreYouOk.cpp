@@ -23,43 +23,43 @@ class My_First_Project_Frame :public wxFrame
 {
 public:
 	My_First_Project_Frame(const wxString &title);
-	void OnJoinOrCopyClicked(wxCommandEvent& event);			//º”»Î∑øº‰ªÚ∏¥÷∆∑øº‰∫≈∞¥≈•ªÿµÙ
-	void OnSettingClicked(wxCommandEvent& event);				//setting∞¥≈•ªÿµÙ
-	void OnExchangeClicked(wxCommandEvent& event);				//◊¥Ã¨«–ªª∞¥≈•ªÿµÙ
-	void OnSocketEvent(wxSocketEvent& event);					//socket∂Ø◊˜ªÿµÙ
-	void OnHotKeyPressed(wxKeyEvent& event);					//hotkeyªÿµÙ
-	void OnLoginOrCreateClicked(wxCommandEvent& event);			//µ«¬ΩªÚ¥¥Ω®∞¥≈•ªÿµÙ
-	void OnRegOrLogoutClicked(wxCommandEvent& event);			//◊¢≤·ªÚµ«≥ˆ∞¥≈•ªÿµÙ
-	void OnInputSkip(wxKeyEvent& event);						//”√ªß√˚√‹¬Î ‰»ÎÃ¯π˝Ãÿ ‚∑˚∫≈
-	void OnTime(wxTimerEvent& event);							//∂® ±∆˜ªÿµ˜
-	void OnQuit(wxCommandEvent& event);							//ÕÀ≥ˆªÿµÙ
+	void OnJoinOrCopyClicked(wxCommandEvent& event);			//Âä†ÂÖ•ÊàøÈó¥ÊàñÂ§çÂà∂ÊàøÈó¥Âè∑ÊåâÈíÆÂõûÊéâ
+	void OnSettingClicked(wxCommandEvent& event);				//settingÊåâÈíÆÂõûÊéâ
+	void OnExchangeClicked(wxCommandEvent& event);				//Áä∂ÊÄÅÂàáÊç¢ÊåâÈíÆÂõûÊéâ
+	void OnSocketEvent(wxSocketEvent& event);					//socketÂä®‰ΩúÂõûÊéâ
+	void OnHotKeyPressed(wxKeyEvent& event);					//hotkeyÂõûÊéâ
+	void OnLoginOrCreateClicked(wxCommandEvent& event);			//ÁôªÈôÜÊàñÂàõÂª∫ÊåâÈíÆÂõûÊéâ
+	void OnRegOrLogoutClicked(wxCommandEvent& event);			//Ê≥®ÂÜåÊàñÁôªÂá∫ÊåâÈíÆÂõûÊéâ
+	void OnInputSkip(wxKeyEvent& event);						//Áî®Êà∑ÂêçÂØÜÁ†ÅËæìÂÖ•Ë∑≥ËøáÁâπÊÆäÁ¨¶Âè∑
+	void OnTime(wxTimerEvent& event);							//ÂÆöÊó∂Âô®ÂõûË∞É
+	void OnQuit(wxCommandEvent& event);							//ÈÄÄÂá∫ÂõûÊéâ
 
 	int GetHotKey() { return hot_key; }
 	void SetHotKey(int a) { hot_key = a; }
 	int GetModKey() { return mod_key; }
 	void SetModKey(int a) { mod_key = a; }
 private:
-	wxTimer * timer;							//∂® ±∆˜
-	wxPanel * panel;							//ø’∞◊√Ê∞Â
-	wxStaticText *num_unready;					//Œ¥◊º±∏
-	wxStaticText *num_ready;					//◊º±∏
-	wxTextCtrl *input;							// ‰»ÎøÚ
-	wxTextCtrl *input_username;					//”√ªß√˚ ‰»ÎøÚ
-	wxTextCtrl *input_passwd;					//√‹¬Î ‰»ÎøÚ
-	wxButton *button_login_or_create;			//µ«¬ΩªÚ’ﬂ¥¥Ω®∑øº‰∞¥≈•
-	wxButton *button_reg_or_logout;				//◊¢≤·ªÚ’ﬂÕÀ≥ˆ∞¥≈•
-	bool login_flag;							// «∑Òµ«¬Ω◊¥Ã¨
-	wxButton *button_join_or_copy;				//º”»Î∑øº‰ªÚ’ﬂ∏¥÷∆∑øº‰∫≈
-	wxButton *setting;							//…Ë÷√∞¥≈•
-	wxBitmapButton *exchange;					//◊¥Ã¨«–ªª∞¥≈•
-	wxSocketClient *s_client;					//¡¨Ω”∑˛ŒÒ∆˜µƒsocket
-	wxIPV4address addr;							//∑˛ŒÒ∆˜µÿ÷∑
-	bool join_room_tag;							// «∑Ò“—æ≠º”»Î∑øº‰±Íº«
-	bool exchange_tag;							//µ±«∞◊¥Ã¨±Í÷æ
-	int hot_key;								//µ±«∞∆’Õ®øÏΩ›º¸
-	int mod_key;								//µ±«∞Ãÿ ‚øÏΩ›º¸
+	wxTimer * timer;							//ÂÆöÊó∂Âô®
+	wxPanel * panel;							//Á©∫ÁôΩÈù¢Êùø
+	wxStaticText *num_unready;					//Êú™ÂáÜÂ§á
+	wxStaticText *num_ready;					//ÂáÜÂ§á
+	wxTextCtrl *input;							//ËæìÂÖ•Ê°Ü
+	wxTextCtrl *input_username;					//Áî®Êà∑ÂêçËæìÂÖ•Ê°Ü
+	wxTextCtrl *input_passwd;					//ÂØÜÁ†ÅËæìÂÖ•Ê°Ü
+	wxButton *button_login_or_create;			//ÁôªÈôÜÊàñËÄÖÂàõÂª∫ÊàøÈó¥ÊåâÈíÆ
+	wxButton *button_reg_or_logout;				//Ê≥®ÂÜåÊàñËÄÖÈÄÄÂá∫ÊåâÈíÆ
+	bool login_flag;							//ÊòØÂê¶ÁôªÈôÜÁä∂ÊÄÅ
+	wxButton *button_join_or_copy;				//Âä†ÂÖ•ÊàøÈó¥ÊàñËÄÖÂ§çÂà∂ÊàøÈó¥Âè∑
+	wxButton *setting;							//ËÆæÁΩÆÊåâÈíÆ
+	wxBitmapButton *exchange;					//Áä∂ÊÄÅÂàáÊç¢ÊåâÈíÆ
+	wxSocketClient *s_client;					//ËøûÊé•ÊúçÂä°Âô®ÁöÑsocket
+	wxIPV4address addr;							//ÊúçÂä°Âô®Âú∞ÂùÄ
+	bool join_room_tag;							//ÊòØÂê¶Â∑≤ÁªèÂä†ÂÖ•ÊàøÈó¥Ê†áËÆ∞
+	bool exchange_tag;							//ÂΩìÂâçÁä∂ÊÄÅÊ†áÂøó
+	int hot_key;								//ÂΩìÂâçÊôÆÈÄöÂø´Êç∑ÈîÆ
+	int mod_key;								//ÂΩìÂâçÁâπÊÆäÂø´Êç∑ÈîÆ
 
-	wxString version;							//∞Ê±æ
+	wxString version;							//ÁâàÊú¨
 };
 
 class My_First_Project :public wxApp
@@ -90,7 +90,7 @@ IMPLEMENT_APP(My_First_Project);
 
 My_First_Project_Frame::My_First_Project_Frame(const wxString &title) :wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(381, 186),wxDEFAULT_FRAME_STYLE|wxSTAY_ON_TOP),login_flag(false),join_room_tag(false),exchange_tag(true),hot_key(32),mod_key(0)
 {
-	//Õ®π˝httpªÒµ√∑˛ŒÒ∆˜ip
+	//ÈÄöËøáhttpËé∑ÂæóÊúçÂä°Âô®ip
 	/*
 	wxHTTP http;
 	http.SetMethod(_T("POST"));
@@ -135,25 +135,25 @@ My_First_Project_Frame::My_First_Project_Frame(const wxString &title) :wxFrame(N
 	wxDELETE(httpstream);
 	http.Close();
 	*/
-	//–¥À¿∞Ê±æ
+	//ÂÜôÊ≠ªÁâàÊú¨
 	version = "1.0.0";
 
 	Connect(wxEVT_CLOSE_WINDOW, wxCommandEventHandler(My_First_Project_Frame::OnQuit));
 	Connect(wxEVT_DESTROY, wxCommandEventHandler(My_First_Project_Frame::OnQuit));
 	Connect(wxEVT_END_SESSION, wxCommandEventHandler(My_First_Project_Frame::OnQuit));
-	//◊¢≤·øÏΩ›º¸
+	//Ê≥®ÂÜåÂø´Êç∑ÈîÆ
 	if (!RegisterHotKey(hot_key, mod_key, hot_key))
 	{
 		hot_key = 0;
 		mod_key = 0;
 		wxMessageBox(_T("Set New Hot Key Failed!\nConflict Happened!"));
 	}
-	//≤‚ ‘”√∂Àø⁄∫Õµÿ÷∑
+	//ÊµãËØïÁî®Á´ØÂè£ÂíåÂú∞ÂùÄ
 	addr.Hostname(_T("areyouok.online"));
 	//test addr
 //	addr.Hostname(_T("192.168.18.121"));
 	addr.Service(38146);
-	//¥¥Ω®socket
+	//ÂàõÂª∫socket
 	s_client = new wxSocketClient();
 	s_client->SetFlags(wxSOCKET_NOWAIT);
 	s_client->SetEventHandler(*this, Socket_ID);
@@ -161,15 +161,15 @@ My_First_Project_Frame::My_First_Project_Frame(const wxString &title) :wxFrame(N
 	s_client->SetNotify(/*wxSOCKET_CONNECTION_FLAG | */wxSOCKET_INPUT_FLAG| wxSOCKET_LOST_FLAG);
 	s_client->Notify(true);
 
-	//¥¥Ω®∂® ±∆˜
+	//ÂàõÂª∫ÂÆöÊó∂Âô®
 	timer = new wxTimer(this, Timer_ID);
 	Connect(Timer_ID, wxEVT_TIMER, wxTimerEventHandler(My_First_Project_Frame::OnTime));
 	timer->Start(3000);
-	//¥¥Ω®“ª∏ˆ±≥æ∞panel
+	//ÂàõÂª∫‰∏Ä‰∏™ËÉåÊôØpanel
 	panel = new wxPanel(this, wxID_ANY);
-	//¥¥Ω®“ª∏ˆ◊‹µƒ ≤ºæ÷øÿº˛
+	//ÂàõÂª∫‰∏Ä‰∏™ÊÄªÁöÑ Â∏ÉÂ±ÄÊéß‰ª∂
 	wxBoxSizer * total_box = new wxBoxSizer(wxVERTICAL);
-	//-----------------------------µ⁄“ª––--------------------------------
+	//-----------------------------Á¨¨‰∏ÄË°å--------------------------------
 	wxStaticText * st_username = new wxStaticText(panel, wxID_ANY, _T("Username:"));
 	wxStaticText * st_passwd = new wxStaticText(panel, wxID_ANY, _T("Passwd:"));
 	input_username = new wxTextCtrl(panel, wxID_ANY, _T(""),wxDefaultPosition,wxSize(60,-1));
@@ -188,74 +188,74 @@ My_First_Project_Frame::My_First_Project_Frame(const wxString &title) :wxFrame(N
 	First_line_box->Add(button_login_or_create,0);
 	First_line_box->Add(button_reg_or_logout,0);
 	total_box->Add(First_line_box, 0, wxEXPAND | wxLEFT | wxRIGHT | wxTOP, 5);
-	//-----------------------------µ⁄∂˛––--------------------------------
-	//¥¥Ω®“ª∏ˆ  ‰»ÎøÚ
+	//-----------------------------Á¨¨‰∫åË°å--------------------------------
+	//ÂàõÂª∫‰∏Ä‰∏™ ËæìÂÖ•Ê°Ü
 	input = new wxTextCtrl(panel, Input_ID, _T(""));
-	//¥¥Ω®“ª∏ˆ »∑»œ∞¥≈•
+	//ÂàõÂª∫‰∏Ä‰∏™ Á°ÆËÆ§ÊåâÈíÆ
 	button_join_or_copy = new wxButton(panel, Join_Or_Copy_BTN, _T("Join"));
-	//¡¨Ω”»∑»œ∞¥≈•µƒ∂Ø◊˜
+	//ËøûÊé•Á°ÆËÆ§ÊåâÈíÆÁöÑÂä®‰Ωú
 	Connect(Join_Or_Copy_BTN, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(My_First_Project_Frame::OnJoinOrCopyClicked));
-	//¥¥Ω®“ª∏ˆ …Ë÷√∞¥≈•
+	//ÂàõÂª∫‰∏Ä‰∏™ ËÆæÁΩÆÊåâÈíÆ
 	setting = new wxButton(panel, Setting_BTN, _("Setting"));
-	//¡¨Ω”…Ë÷√∞¥≈•µƒ∂Ø◊˜
+	//ËøûÊé•ËÆæÁΩÆÊåâÈíÆÁöÑÂä®‰Ωú
 	Connect(Setting_BTN, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(My_First_Project_Frame::OnSettingClicked));
-	//hotkeyªÿµÙ
+	//hotkeyÂõûÊéâ
 	Connect(wxEVT_HOTKEY, wxKeyEventHandler(My_First_Project_Frame::OnHotKeyPressed));
-	//Œ™  ‰»ÎøÚ∫Õ»∑»œ∞¥≈• ¥¥Ω®“ª∏ˆÀÆ∆Ω ≤ºæ÷øÿº˛
+	//‰∏∫ ËæìÂÖ•Ê°ÜÂíåÁ°ÆËÆ§ÊåâÈíÆ ÂàõÂª∫‰∏Ä‰∏™Ê∞¥Âπ≥ Â∏ÉÂ±ÄÊéß‰ª∂
 	wxBoxSizer * input_box = new wxBoxSizer(wxHORIZONTAL);
 	input_box->Add(setting, 0,wxRIGHT,3);
 	input_box->Add(input, 1,wxTOP,3);
 	input_box->Add(button_join_or_copy, 0, wxLEFT, 5);
 	total_box->Add(input_box, 0, wxEXPAND | wxLEFT | wxRIGHT, 5);
-	//-----------------------------µ⁄»˝––-------------------------------------
-	//”√”⁄¥Ê∑≈◊º±∏∫√µƒ»Àµƒ Õº∆¨£¨title£¨∫Õ∂ØÃ¨∏ƒ±‰µƒ ˝¡ø
-	//◊Û±ﬂ ◊‹µƒ
+	//-----------------------------Á¨¨‰∏âË°å-------------------------------------
+	//Áî®‰∫éÂ≠òÊîæÂáÜÂ§áÂ•ΩÁöÑ‰∫∫ÁöÑ ÂõæÁâáÔºåtitleÔºåÂíåÂä®ÊÄÅÊîπÂèòÁöÑÊï∞Èáè
+	//Â∑¶Ëæπ ÊÄªÁöÑ
 	wxBoxSizer * left_total_box = new wxBoxSizer(wxHORIZONTAL);
-	//◊Û±ﬂ Õº∆¨
-	//◊Û±ﬂ –≈œ¢
+	//Â∑¶Ëæπ ÂõæÁâá
+	//Â∑¶Ëæπ ‰ø°ÊÅØ
 	wxBoxSizer * left_img_box = new wxBoxSizer(wxVERTICAL);
 	wxBoxSizer * left_message_box = new wxBoxSizer(wxVERTICAL);
-	//”“±ﬂ ◊‹µƒ
+	//Âè≥Ëæπ ÊÄªÁöÑ
 	wxBoxSizer * right_total_box = new wxBoxSizer(wxHORIZONTAL);
-	//”“±ﬂ Õº∆¨
-	//”“±ﬂ –≈œ¢
+	//Âè≥Ëæπ ÂõæÁâá
+	//Âè≥Ëæπ ‰ø°ÊÅØ
 	wxBoxSizer * right_img_box = new wxBoxSizer(wxVERTICAL);
 	wxBoxSizer * right_message_box = new wxBoxSizer(wxVERTICAL);
-	//÷–º‰
+	//‰∏≠Èó¥
 	wxBoxSizer * mid_box = new wxBoxSizer(wxHORIZONTAL);
-	//◊‹µƒ
+	//ÊÄªÁöÑ
 	wxBoxSizer * message_box = new wxBoxSizer(wxHORIZONTAL);
-	//◊º±∏∫√£¨√ª”–◊™±∏∫√µƒ◊÷∑˚¥Æ
+	//ÂáÜÂ§áÂ•ΩÔºåÊ≤°ÊúâËΩ¨Â§áÂ•ΩÁöÑÂ≠óÁ¨¶‰∏≤
 	wxStaticText *on_fire = new wxStaticText(panel, wxID_ANY, _T("OK! OK!"));
 	wxStaticText *on_sleep = new wxStaticText(panel, wxID_ANY, _T("NOT OK!"));
-	//¥¥Ω®¡Ω∏ˆ±Ì æ◊¥Ã¨µƒ ˝◊÷
+	//ÂàõÂª∫‰∏§‰∏™Ë°®Á§∫Áä∂ÊÄÅÁöÑÊï∞Â≠ó
 	num_unready = new wxStaticText(panel, wxID_ANY, _T("0"));
 	num_ready = new wxStaticText(panel, wxID_ANY, _T("0"));
-	//Õº∆¨
+	//ÂõæÁâá
 	wxImage::AddHandler(new wxPNGHandler);
 	wxBitmap on_fire_png("img\\fire.png", wxBITMAP_TYPE_PNG);
 	wxBitmap on_sleep_png("img\\sleep.png", wxBITMAP_TYPE_PNG);
 	wxBitmap exchange_png("img\\exchange.png", wxBITMAP_TYPE_PNG);
-	//◊Û±ﬂ
+	//Â∑¶Ëæπ
 	wxStaticBitmap* static_icon_fire = new wxStaticBitmap(panel, wxID_ANY, on_fire_png);
 	left_img_box->Add(static_icon_fire);
 	left_message_box->Add(on_fire);
 	left_message_box->Add(num_ready);
 	left_total_box->Add(left_img_box);
 	left_total_box->Add(left_message_box,0,wxALIGN_CENTER);
-	//”“±ﬂ
+	//Âè≥Ëæπ
 	wxStaticBitmap* static_icon_sleep = new wxStaticBitmap(panel, wxID_ANY, on_sleep_png);
 	right_img_box->Add(static_icon_sleep);
 	right_message_box->Add(on_sleep,0,wxALIGN_RIGHT);
 	right_message_box->Add(num_unready,0);
 	right_total_box->Add(right_message_box,0,wxALIGN_CENTER);
 	right_total_box->Add(right_img_box,0);
-	//÷–º‰
+	//‰∏≠Èó¥
 	exchange =new wxBitmapButton(panel, Exchange_BTN, exchange_png);
 	Connect(Exchange_BTN, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(My_First_Project_Frame::OnExchangeClicked));
 	exchange->SetBackgroundColour(wxColour(0, 255, 0));
 	mid_box->Add(exchange,0);
-	//ÃÓ≥‰
+	//Â°´ÂÖÖ
 	wxBoxSizer *fill_box_1 = new wxBoxSizer(wxHORIZONTAL);
 	fill_box_1->Add(-1, 1);
 	wxBoxSizer *fill_box_2 = new wxBoxSizer(wxHORIZONTAL);
@@ -268,10 +268,10 @@ My_First_Project_Frame::My_First_Project_Frame(const wxString &title) :wxFrame(N
 
 	total_box->Add(message_box,0,wxEXPAND|wxLEFT|wxRIGHT,5);
 
-	//Ω´◊‹µƒ≤ºæ÷øÿº˛ ∏Ωº”µΩpanel…œ
+	//Â∞ÜÊÄªÁöÑÂ∏ÉÂ±ÄÊéß‰ª∂ ÈôÑÂä†Âà∞panel‰∏ä
 	panel->SetSizer(total_box);
-	//-----------------------------µ⁄Àƒ––-----------------------------
-	wxMessageBox(_T("Welcome!This Is A Completely Free App!\nTCP Packets Wasn't Encoded,Don't Use Your familiar Acount To Reg!\nIf This App Is Useful To You,And You Want To Support It!\nYou Can Donate For It On The WebSite!\nThe Money Will Be Used To Maintain The Server And Domain!\nHave Fun,Thanks!\nWebSite:www.areyouok.online"));
+	//-----------------------------Á¨¨ÂõõË°å-----------------------------
+	wxMessageBox(_T("Welcome!This Is A Completely Free App!\nTCP Packets Wasn't Encoded,Don't Use Your familiar Acount To Reg!\nIf This App Is Useful To You,And You Want To Support It!\nYou Can Donate For It On The WebSite!\nThe Money Will Be Used To Maintain The Server And Domain!\nHave Fun,Thanks!\nWebSite:github.com/chenjie199234/AreYouOk"));
 }
 void My_First_Project_Frame::OnQuit(wxCommandEvent & event)
 {
@@ -290,7 +290,7 @@ void My_First_Project_Frame::OnTime(wxTimerEvent& event)
 }
 void My_First_Project_Frame::OnInputSkip(wxKeyEvent& event)
 {
-	//»•≥˝Ãÿ ‚∑˚∫≈£¨÷ª”–¥Û–°–¥”¢Œƒ∫Õ ˝◊÷
+	//ÂéªÈô§ÁâπÊÆäÁ¨¶Âè∑ÔºåÂè™ÊúâÂ§ßÂ∞èÂÜôËã±ÊñáÂíåÊï∞Â≠ó
 	if (((event.GetKeyCode() >=48  && event.GetKeyCode() <=57) || (event.GetKeyCode()>=65 && event.GetKeyCode()<=90) || (event.GetKeyCode()>=97 && event.GetKeyCode()<=122) || event.GetKeyCode() == 8) && event.GetKeyCode()!=47 && event.GetKeyCode()!=32)
 		event.Skip();
 //	if (event.GetKeyCode())
@@ -300,10 +300,10 @@ void My_First_Project_Frame::OnLoginOrCreateClicked(wxCommandEvent& event)
 {
 	if (login_flag)
 	{
-		//“—µ«¬Ω
+		//Â∑≤ÁôªÈôÜ
 		if (s_client->IsConnected())
 		{
-			//∑¢ÀÕ¥¥Ω®∑øº‰œ˚œ¢
+			//ÂèëÈÄÅÂàõÂª∫ÊàøÈó¥Ê∂àÊÅØ
 			char head = '5';
 			button_login_or_create->Enable(false);
 			input->Enable(false);
@@ -318,10 +318,10 @@ void My_First_Project_Frame::OnLoginOrCreateClicked(wxCommandEvent& event)
 	}
 	else
 	{
-		//Œ¥µ«¬Ω
+		//Êú™ÁôªÈôÜ
 		if (s_client->IsConnected())
 		{
-			//∑¢ÀÕµ«¬Ωœ˚œ¢
+			//ÂèëÈÄÅÁôªÈôÜÊ∂àÊÅØ
 			char head = '3';
 			wxString username_str = input_username->GetLineText(1);
 			wxString passwd_str = input_passwd->GetLineText(1);
@@ -351,7 +351,7 @@ void My_First_Project_Frame::OnLoginOrCreateClicked(wxCommandEvent& event)
 			}
 			else
 			{
-				//∑¢ÀÕµ«¬Ωœ˚œ¢
+				//ÂèëÈÄÅÁôªÈôÜÊ∂àÊÅØ
 				char head = '3';
 				wxString username_str = input_username->GetLineText(1);
 				wxString passwd_str = input_passwd->GetLineText(1);
@@ -380,13 +380,13 @@ void My_First_Project_Frame::OnRegOrLogoutClicked(wxCommandEvent& event)
 {
 	if (login_flag)
 	{
-		//“—µ«¬Ω
+		//Â∑≤ÁôªÈôÜ
 		if (s_client->IsConnected())
 		{
-			//∑¢ÀÕµ«≥ˆœ˚œ¢
+			//ÂèëÈÄÅÁôªÂá∫Ê∂àÊÅØ
 			s_client->Close();
 			login_flag = false;
-			//÷ÿ÷√
+			//ÈáçÁΩÆ
 			input->Enable(true);
 			input_username->Enable(true);
 			input_passwd->Enable(true);
@@ -416,10 +416,10 @@ void My_First_Project_Frame::OnRegOrLogoutClicked(wxCommandEvent& event)
 	}
 	else
 	{
-		//Œ¥µ«¬Ω
+		//Êú™ÁôªÈôÜ
 		if (s_client->IsConnected())
 		{
-			//∑¢ÀÕ◊¢≤·œ˚œ¢
+			//ÂèëÈÄÅÊ≥®ÂÜåÊ∂àÊÅØ
 			char head = '4';
 			wxString username_str = input_username->GetLineText(1);
 			wxString passwd_str = input_passwd->GetLineText(1);
@@ -449,7 +449,7 @@ void My_First_Project_Frame::OnRegOrLogoutClicked(wxCommandEvent& event)
 			}
 			else
 			{
-				//∑¢ÀÕ◊¢≤·œ˚œ¢
+				//ÂèëÈÄÅÊ≥®ÂÜåÊ∂àÊÅØ
 				char head = '4';
 				wxString username_str = input_username->GetLineText(1);
 				wxString passwd_str = input_passwd->GetLineText(1);
@@ -476,7 +476,7 @@ void My_First_Project_Frame::OnRegOrLogoutClicked(wxCommandEvent& event)
 }
 void My_First_Project_Frame::OnJoinOrCopyClicked(wxCommandEvent &event)
 {
-	//√ø¥Œ÷ÿ–¬¡¨Ω”µƒ ±∫Ú∂º÷ÿ÷√◊¥Ã¨
+	//ÊØèÊ¨°ÈáçÊñ∞ËøûÊé•ÁöÑÊó∂ÂÄôÈÉΩÈáçÁΩÆÁä∂ÊÄÅ
 	if (join_room_tag)
 	{
 		input->SelectAll();
@@ -489,7 +489,7 @@ void My_First_Project_Frame::OnJoinOrCopyClicked(wxCommandEvent &event)
 		exchange->SetBackgroundColour(wxColour(0, 255, 0));
 		if (s_client->IsConnected())
 		{
-			//∑¢ÀÕº”»Î∑øº‰œ˚œ¢
+			//ÂèëÈÄÅÂä†ÂÖ•ÊàøÈó¥Ê∂àÊÅØ
 			char head = '2';
 			wxString unique_num = head;
 			wxString room_str = input->GetLineText(1);
@@ -511,7 +511,7 @@ void My_First_Project_Frame::OnJoinOrCopyClicked(wxCommandEvent &event)
 			}
 			else
 			{
-				//∑¢ÀÕº”»Î∑øº‰œ˚œ¢
+				//ÂèëÈÄÅÂä†ÂÖ•ÊàøÈó¥Ê∂àÊÅØ
 				char head = '2';
 				wxString unique_num = head;
 				wxString room_str = input->GetLineText(1);
@@ -546,13 +546,13 @@ void My_First_Project_Frame::OnHotKeyPressed(wxKeyEvent& event)
 			if (exchange_tag)
 			{
 				a = '0';
-				//∑¿÷π∂‡¥Œµ„ª˜£¨÷ª”– ’µΩ∑˛ŒÒ∆˜œ˚œ¢∫Û≤≈ƒ‹‘Ÿµ„
+				//Èò≤Ê≠¢Â§öÊ¨°ÁÇπÂáªÔºåÂè™ÊúâÊî∂Âà∞ÊúçÂä°Âô®Ê∂àÊÅØÂêéÊâçËÉΩÂÜçÁÇπ
 				exchange->Enable(false);
 			}
 			else
 			{
 				a = '1';
-				//∑¿÷π∂‡¥Œµ„ª˜£¨÷ª”– ’µΩ∑˛ŒÒ∆˜œ˚œ¢∫Û≤≈ƒ‹‘Ÿµ„
+				//Èò≤Ê≠¢Â§öÊ¨°ÁÇπÂáªÔºåÂè™ÊúâÊî∂Âà∞ÊúçÂä°Âô®Ê∂àÊÅØÂêéÊâçËÉΩÂÜçÁÇπ
 				exchange->Enable(false);
 			}
 			s_client->Write(&a, 1);
@@ -565,20 +565,20 @@ void My_First_Project_Frame::OnHotKeyPressed(wxKeyEvent& event)
 }
 void My_First_Project_Frame::OnExchangeClicked(wxCommandEvent &event)
 {
-	//±ÿ–Î «¡¨Ω”◊¥Ã¨ ≤¢«“ º”»Î∑øº‰¡À≤≈ƒ‹Ω¯––◊¥Ã¨«–ªª
+	//ÂøÖÈ°ªÊòØËøûÊé•Áä∂ÊÄÅ Âπ∂‰∏î Âä†ÂÖ•ÊàøÈó¥‰∫ÜÊâçËÉΩËøõË°åÁä∂ÊÄÅÂàáÊç¢
 	if (s_client->IsConnected() && join_room_tag)
 	{
 		char a;
 		if (exchange_tag)
 		{
 			a = '0';
-			//∑¿÷π∂‡¥Œµ„ª˜£¨÷ª”– ’µΩ∑˛ŒÒ∆˜œ˚œ¢∫Û≤≈ƒ‹‘Ÿµ„
+			//Èò≤Ê≠¢Â§öÊ¨°ÁÇπÂáªÔºåÂè™ÊúâÊî∂Âà∞ÊúçÂä°Âô®Ê∂àÊÅØÂêéÊâçËÉΩÂÜçÁÇπ
 			exchange->Enable(false);
 		}
 		else
 		{
 			a = '1';
-			//∑¿÷π∂‡¥Œµ„ª˜£¨÷ª”– ’µΩ∑˛ŒÒ∆˜œ˚œ¢∫Û≤≈ƒ‹‘Ÿµ„
+			//Èò≤Ê≠¢Â§öÊ¨°ÁÇπÂáªÔºåÂè™ÊúâÊî∂Âà∞ÊúçÂä°Âô®Ê∂àÊÅØÂêéÊâçËÉΩÂÜçÁÇπ
 			exchange->Enable(false);
 		}
 		s_client->Write(&a, 1);
@@ -592,7 +592,7 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 {
 	switch (event.GetSocketEvent())
 	{
-	//ø…∂¡
+	//ÂèØËØª
 	case wxSOCKET_INPUT:
 	{
 		char status;
@@ -603,13 +603,13 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 				break;
 			switch (status)
 			{
-			case '0'://√ª”–◊º±∏∫√
+			case '0'://Ê≤°ÊúâÂáÜÂ§áÂ•Ω
 			{
 				char tempbuffer[9];
 				s_client->Peek(tempbuffer, 9);
 				if (s_client->LastCount() == 9)
 				{
-					//≤ª¥Ê‘⁄’≥∞¸
+					//‰∏çÂ≠òÂú®Á≤òÂåÖ
 					char head;
 					char ready_buffer[4];
 					char unreaddy_buffer[4];
@@ -631,17 +631,17 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 					exchange->Enable(true);
 				}
 				else
-					//¥Ê‘⁄’≥∞¸
+					//Â≠òÂú®Á≤òÂåÖ
 					break;
 			}
 			break;
-			case '1'://◊º±∏∫√¡À
+			case '1'://ÂáÜÂ§áÂ•Ω‰∫Ü
 			{
 				char tempbuffer[9];
 				s_client->Peek(tempbuffer, 9);
 				if (s_client->LastCount() == 9)
 				{
-					//≤ª¥Ê‘⁄’≥∞¸
+					//‰∏çÂ≠òÂú®Á≤òÂåÖ
 					char head;
 					char ready_buffer[4];
 					char unreaddy_buffer[4];
@@ -663,11 +663,11 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 					exchange->Enable(true);
 				}
 				else
-					//¥Ê‘⁄’≥∞¸
+					//Â≠òÂú®Á≤òÂåÖ
 					break;
 			}
 			break;
-			case '2'://º”»Î∑øº‰ ß∞‹
+			case '2'://Âä†ÂÖ•ÊàøÈó¥Â§±Ë¥•
 			{
 				char head;
 				s_client->Read(&head, 1);
@@ -676,13 +676,13 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 				wxMessageBox(_T("Room Does Not Exist!"));
 			}
 			break;
-			case '3'://º”»Î∑øº‰≥…π¶
+			case '3'://Âä†ÂÖ•ÊàøÈó¥ÊàêÂäü
 			{
 				char tempbuffer[9];
 				s_client->Peek(tempbuffer, 9);
 				if (s_client->LastCount() == 9)
 				{
-					//≤ª¥Ê‘⁄’≥∞¸
+					//‰∏çÂ≠òÂú®Á≤òÂåÖ
 					char head;
 					char ready_buffer[4];
 					char unreaddy_buffer[4];
@@ -708,11 +708,11 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 					wxMessageBox(_T("Join Room Sucess!"));
 				}
 				else
-					//¥Ê‘⁄’≥∞¸
+					//Â≠òÂú®Á≤òÂåÖ
 					break;
 			}
 			break;
-			case '4'://µ«¬ΩªÚ’ﬂ◊¢≤·≥…π¶
+			case '4'://ÁôªÈôÜÊàñËÄÖÊ≥®ÂÜåÊàêÂäü
 			{
 				char head;
 				s_client->Read(&head, 1);
@@ -726,7 +726,7 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 				wxMessageBox(_T("Welcome To Use AreYouOK!"));
 			}
 			break;
-			case '5'://µ«¬Ω ß∞‹
+			case '5'://ÁôªÈôÜÂ§±Ë¥•
 			{
 				char head;
 				s_client->Read(&head, 1);
@@ -737,7 +737,7 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 				wxMessageBox(_T("Wrong Username Or Wrong Passwd!"));
 			}
 			break;
-			case '6'://◊¢≤· ß∞‹
+			case '6'://Ê≥®ÂÜåÂ§±Ë¥•
 			{
 				char head;
 				s_client->Read(&head, 1);
@@ -748,19 +748,19 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 				wxMessageBox(_T("Username Exist!"));
 			}
 			break;
-			case '7'://¥¥Ω®∑øº‰≥…π¶
+			case '7'://ÂàõÂª∫ÊàøÈó¥ÊàêÂäü
 			{
 				char tempbuffer[17];
 				s_client->Peek(tempbuffer, 17);
 				if (s_client->LastCount() == 17)
 				{
-					//≤ª¥Ê‘⁄’≥∞¸
+					//‰∏çÂ≠òÂú®Á≤òÂåÖ
 					char head;
 					char roombuffer[17];
 					s_client->Read(&head, 1);
 					s_client->Read(roombuffer, 16);
 					roombuffer[16] = '\0';
-					//Ω´∑øº‰∫≈–¥»Îinput÷–
+					//Â∞ÜÊàøÈó¥Âè∑ÂÜôÂÖ•input‰∏≠
 					input->SetValue(roombuffer);
 					num_ready->SetLabel(_T("1"));
 					num_unready->SetLabel(_T("0"));
@@ -773,11 +773,11 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 					wxMessageBox(_T("Create Room Sucess!\nYou Are Already In The Room!"));
 				}
 				else
-					//¥Ê‘⁄’≥∞¸
+					//Â≠òÂú®Á≤òÂåÖ
 					break;
 			}
 			break;
-			case '8'://Ω” ‹∑˛ŒÒ∆˜µƒÕ®÷™œ˚œ¢
+			case '8'://Êé•ÂèóÊúçÂä°Âô®ÁöÑÈÄöÁü•Ê∂àÊÅØ
 			{
 				unsigned int msg_length = 0;
 				char msg_head[5];
@@ -790,7 +790,7 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 					s_client->Peek(msg, (msg_length + 5));
 					if (s_client->LastCount() == (msg_length + 5))
 					{
-						//≤ª¥Ê‘⁄’≥∞¸
+						//‰∏çÂ≠òÂú®Á≤òÂåÖ
 						s_client->Read(msg, (msg_length + 5));
 						wxString str;
 						for (unsigned int i = 0; i < msg_length; i++)
@@ -800,22 +800,22 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 						wxMessageBox(str);
 					}
 					else
-						//¥Ê‘⁄’≥∞¸
+						//Â≠òÂú®Á≤òÂåÖ
 						break;
 					delete []msg;
 				}
 				else
-					//¥Ê‘⁄’≥∞¸
+					//Â≠òÂú®Á≤òÂåÖ
 					break;
 			}
 			break;
-			case '9'://∏¸–¬ ˝æ›
+			case '9'://Êõ¥Êñ∞Êï∞ÊçÆ
 			{
 				char tempbuffer[9];
 				s_client->Peek(tempbuffer, 9);
 				if (s_client->LastCount() == 9)
 				{
-					//≤ª¥Ê‘⁄’≥∞¸
+					//‰∏çÂ≠òÂú®Á≤òÂåÖ
 					char head;
 					char ready_buffer[4];
 					char unreaddy_buffer[4];
@@ -835,7 +835,7 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 				}
 			}
 			break;
-			case 'a'://∞Ê±æ—È÷§
+			case 'a'://ÁâàÊú¨È™åËØÅ
 			{
 				unsigned int msg_length = 0;
 				char msg_head[5];
@@ -848,7 +848,7 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 					s_client->Peek(msg, (msg_length + 5));
 					if (s_client->LastCount() == (msg_length + 5))
 					{
-						//≤ª¥Ê‘⁄’≥∞¸
+						//‰∏çÂ≠òÂú®Á≤òÂåÖ
 						s_client->Read(msg, (msg_length + 5));
 						wxString str;
 						for (unsigned int i = 0; i < msg_length; i++)
@@ -862,12 +862,12 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 						}
 					}
 					else
-						//¥Ê‘⁄’≥∞¸
+						//Â≠òÂú®Á≤òÂåÖ
 						break;
 					delete[]msg;
 				}
 				else
-					//¥Ê‘⁄’≥∞¸
+					//Â≠òÂú®Á≤òÂåÖ
 					break;
 			}
 			break;
@@ -881,13 +881,13 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 		}
 	}
 	break;
-	//∂œø™
+	//Êñ≠ÂºÄ
 	case wxSOCKET_LOST:
 	{
-		//πÿ±’socket
+		//ÂÖ≥Èó≠socket
 		s_client->Close();
 		login_flag = false;
-		//÷ÿ÷√
+		//ÈáçÁΩÆ
 		input->Enable(true);
 		input_username->Enable(true);
 		input_passwd->Enable(true);
@@ -915,7 +915,7 @@ void My_First_Project_Frame::OnSocketEvent(wxSocketEvent &event)
 	}
 }
 
-//…Ë÷√√Ê∞Â
+//ËÆæÁΩÆÈù¢Êùø
 SetDialog::SetDialog(My_First_Project_Frame* frame, const wxString &title):wxDialog(frame,wxID_ANY,title,wxDefaultPosition,wxSize(300,140)),parent(frame)
 {
 	SetFocus();
@@ -962,17 +962,17 @@ SetDialog::SetDialog(My_First_Project_Frame* frame, const wxString &title):wxDia
 		key_normal = _T("8");
 	else if (h_k == 57)
 		key_normal = _T("9");
-	//-------------------------µ⁄“ª––------------------------------
+	//-------------------------Á¨¨‰∏ÄË°å------------------------------
 	wxStaticText * message = new wxStaticText(panel, wxID_ANY, _T("Select New Key As Your New Hot Key!\nSupport Keys : (Ctrl / Shift / Alt) + (0-9) !"));
-	//-------------------------µ⁄∂˛––------------------------------
+	//-------------------------Á¨¨‰∫åË°å------------------------------
 	wxStaticText * now_key;
 	if (wxStrlen(key_special))
 		now_key = new wxStaticText(panel, wxID_ANY, wxString::Format(_T("Now Hot Key : %s - %s"), key_special, key_normal));
 	else
 		now_key = new wxStaticText(panel, wxID_ANY, wxString::Format(_T("Now Hot Key : %s"), key_normal));
-	//-------------------------µ⁄»˝––------------------------------
+	//-------------------------Á¨¨‰∏âË°å------------------------------
 	wxBoxSizer * hbox = new wxBoxSizer(wxHORIZONTAL);
-	//Ãÿ ‚øÏΩ›º¸
+	//ÁâπÊÆäÂø´Êç∑ÈîÆ
 	wxStaticText *choice_mod_text = new wxStaticText(panel, wxID_ANY, _T("Special:"));
 	wxString mod_str[] = { _T("Don't Use"),_T("Ctrl"),_T("Shift"),_T("Alt") };
 	wxChoice* choice_mod = new wxChoice(panel, wxID_ANY, wxDefaultPosition, wxSize(80, -1), WXSIZEOF(mod_str), mod_str, 0);
@@ -980,7 +980,7 @@ SetDialog::SetDialog(My_First_Project_Frame* frame, const wxString &title):wxDia
 		choice_mod->SetStringSelection(key_special);
 	else
 		choice_mod->SetStringSelection(_T("Don't Use"));
-	//’˝≥£øÏΩ›º¸
+	//Ê≠£Â∏∏Âø´Êç∑ÈîÆ
 	wxStaticText *choice_hot_text = new wxStaticText(panel, wxID_ANY, _T("Normal:"));
 	wxString hot_str[] = { _T("0"),_T("1"),_T("2"),_T("3"),_T("4"),_T("5"),_T("6"),_T("7"),_T("8"),_T("9"),_T("Space") };
 	wxChoice* choice_hot = new wxChoice(panel, wxID_ANY, wxDefaultPosition, wxSize(80, -1), WXSIZEOF(hot_str), hot_str, 0);
