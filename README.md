@@ -4,7 +4,7 @@ A SoftWare For Synchronize Status Based On Wxwidgets
 
 这是一个状态同步软件基于wxwidgets编写
 
-![image](https://github.com/chenjie199234/AreYouOk/raw/master/screenshot/OKOK.png) ![image](https://github.com/chenjie199234/AreYouOk/raw/master/screenshot/NotOK.png)
+![image](https://github.com/chenjie199234/AreYouOk/raw/master/Client/screenshot/OKOK.png) ![image](https://github.com/chenjie199234/AreYouOk/raw/master/Client/screenshot/NotOK.png)
 
 # How Does This Software Works:
 
